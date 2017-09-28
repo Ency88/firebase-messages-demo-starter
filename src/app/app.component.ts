@@ -6,5 +6,28 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  public messages = [
+    { text: 'Hi'},
+    { text: 'Hi!!!'},
+    { text: 'Hi!!!'},
+    { text: 'Hi!!!'},
+    { text: 'Hi!!!'},
+    { text: 'Hi!!!'},
+    { text: 'Hi!!!'},
+    { text: 'Hi!!!'},
+    { text: 'Hi!!!'},
+    { text: 'Hi!!!'},
+    { text: 'Hi!!!'},
+    { text: 'Hi!!!'},
+    { text: 'Hi!!!'},
+    { text: 'Hi!!!'},
+    { text: 'Hi!!!'},
+    { text: 'Hi!!!'},
+    { text: 'Hi!!!'},
+    { text: 'Hi!!!'}
+  ];
+
+  send(value) {
+    this.messages.push({ text: value });
+  }
 }

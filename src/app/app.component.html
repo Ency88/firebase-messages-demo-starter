@@ -1,3 +1,10 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container-fluid">
+  <header>
+    <div>
+      Friendly chat
+    </div>
+  </header>
+  <app-chat-list [messages]="messages"></app-chat-list>
+</div>
+<div style="height: 3em"></div>
+<app-input-bar (send)="send($event)"></app-input-bar>

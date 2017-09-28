@@ -1,0 +1,3 @@
+<ul>
+  <li [ngClass]="{'me': (i%2===0), 'him': (i%2!==0)}" *ngFor="let message of messages; let i = index">{{message.text}}</li>
+</ul>

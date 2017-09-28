@@ -4,10 +4,14 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { InputBarComponent } from './input-bar/input-bar.component';
+import { ChatListComponent } from './chat-list/chat-list.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    InputBarComponent,
+    ChatListComponent
   ],
   imports: [
     BrowserModule,
