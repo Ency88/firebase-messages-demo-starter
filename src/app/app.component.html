@@ -2,9 +2,10 @@
   <header>
     <div>
       Friendly chat
+      <input #limit (change)="changeLimit(limit.value)">
     </div>
   </header>
-  <app-chat-list [messages]="messages"></app-chat-list>
+  <app-chat-list [messages]="messages | async"></app-chat-list>
 </div>
 <div style="height: 3em"></div>
 <app-input-bar (send)="send($event)"></app-input-bar>
